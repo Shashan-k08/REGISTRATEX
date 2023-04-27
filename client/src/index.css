@@ -13,7 +13,7 @@ code {
 }
 
 .register{
-  background-color: aqua;
+  background-color:#6F1EF3;
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -26,8 +26,19 @@ code {
   flex-direction: row;
 }
 .box1{
-
+  background-color: crimson;
+  width: 36vh;
+  height: max-content;
 }
 .box2{
 
 }
+.anime{
+
+}
+.anime-img{
+  height: 17vw;
+  width: 17vw;
+  background-size: cover;
+}
+
