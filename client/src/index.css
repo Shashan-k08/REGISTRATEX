@@ -11,3 +11,23 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.register{
+  background-color: aqua;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-box{
+  display: flex;
+  flex-direction: row;
+}
+.box1{
+
+}
+.box2{
+
+}
