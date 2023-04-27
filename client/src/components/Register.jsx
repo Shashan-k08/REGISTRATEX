@@ -3,14 +3,7 @@ import img1 from '../img/Art.png';
 import img2 from '../img/dora.png';
 const Register = () => {
     return (
-        <div className="register-box">
-            <div className="box1">
-
-
-                <img src={img2} alt="" className="anime-img" />
-            </div>
-            <div className="box2">
-
+        
                 <div class="container">
                     <header>Registration</header>
 
@@ -188,8 +181,7 @@ const Register = () => {
                 </div>
 
 
-            </div>
-        </div>
+   
     )
 }
 
