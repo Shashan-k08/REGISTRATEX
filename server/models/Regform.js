@@ -44,7 +44,7 @@ const RegisterSchema = new Schema({
         type: String,
         required: true
     },
-    cranch: {
+    branch: {
         type: String,
         required: true
     },
@@ -54,4 +54,4 @@ const RegisterSchema = new Schema({
     },
 });
 
-module.exports = mongoose.model(RegisterSchema);
+module.exports = mongoose.model('form',RegisterSchema);

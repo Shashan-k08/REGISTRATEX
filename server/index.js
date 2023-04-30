@@ -11,7 +11,7 @@ app.get('/', (req, res) => {
 })
 app.use(express.json());
 //Available Routes
-
+app.use('/api/form', require('./routes/form'))
 
 app.listen(port, () => {
   console.log(`Registratex app listening on port ${port}`)
