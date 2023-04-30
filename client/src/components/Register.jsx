@@ -1,6 +1,6 @@
 import React from 'react'
 import img1 from '../img/Art.png';
-import img2 from '../img/dora.png';
+import img2 from '../img/dora2.png';
 const Register = () => {
     return (
         <>
