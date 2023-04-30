@@ -32,6 +32,10 @@ const Register = () => {
                                     <label>Email</label>
                                     <input type="text" placeholder="Enter your email" required />
                                 </div>
+                                <div class="input-field">
+                                    <label> College Email</label>
+                                    <input type="text" placeholder="Enter your email" required />
+                                </div>
 
                                 <div class="input-field">
                                     <label>Mobile Number</label>
@@ -41,7 +45,7 @@ const Register = () => {
                                 <div class="input-field">
                                     <label>Gender</label>
                                     <select required>
-                                        <option disabled selected>Select gender</option>
+                                        <option  selected>Select gender</option>
                                         <option>Male</option>
                                         <option>Female</option>
                                         <option>Others</option>
@@ -49,9 +53,25 @@ const Register = () => {
                                 </div>
 
                                 <div class="input-field">
-                                    <label>Occupation</label>
-                                    <input type="text" placeholder="Enter your ccupation" required />
+                                    <label>Studen No.</label>
+                                    <input type="number" placeholder="ex . 2110038" required />
                                 </div>
+                                <div class="input-field">
+                                    <label>University Roll No.</label>
+                                    <input type="number" placeholder="ex . 2110038" required />
+                                </div>
+                                <div class="input-field">
+                                    <label>Branch</label>
+                                    <select required>
+                                        <option  selected>Select Branch</option>
+                                        <option>CSE</option>
+                                        <option>CSE(AIML)</option>
+                                        <option>CSE(DS)</option>
+                                        <option>AIML</option>
+                                        <option>ECE</option>
+                                        <option>EE</option>
+                                        
+                                    </select> </div>
                             </div>
                         </div>
 
