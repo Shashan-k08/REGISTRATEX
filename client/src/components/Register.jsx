@@ -3,11 +3,12 @@ import img1 from '../img/Art.png';
 import { useState } from 'react';
 import img2 from '../img/dora2.png';
 const Register = () => {
-    const [credentials, setcredentials] = useState({ name: "", email: "", password: "" })
+    const [credentials, setcredentials] = useState({ name: "", email: "", cmail: "", dob: "", gender: "", studentno: "", unirollno: "", branch: "" })
     const host = "http://localhost:3005/api/form/reguser";
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const { name, email, password } = credentials;
+        // const { name, email, password } = credentials;
+        console.log(credentials);
     }
 
 
@@ -24,7 +25,7 @@ const Register = () => {
             <div class="container">
                 <header>Registration</header>
 
-                <form onSubmit={handleSubmit}>
+                <form >
                     <div class="form first">
                         <div class="details personal">
                             <span class="title">Personal Details</span>
@@ -56,11 +57,11 @@ const Register = () => {
 
                                 <div class="input-field">
                                     <label>Gender</label>
-                                    <select required>
+                                    <select onChange={onchange} name="gender" required>
                                         <option selected>Select gender</option>
-                                        <option>Male</option>
-                                        <option>Female</option>
-                                        <option>Others</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Others">Others</option>
                                     </select>
                                 </div>
 
@@ -74,14 +75,14 @@ const Register = () => {
                                 </div>
                                 <div class="input-field">
                                     <label>Branch</label>
-                                    <select required>
-                                        <option selected>Select Branch</option>
-                                        <option>CSE</option>
-                                        <option>CSE(AIML)</option>
-                                        <option>CSE(DS)</option>
-                                        <option>AIML</option>
-                                        <option>ECE</option>
-                                        <option>EE</option>
+                                    <select onChange={onchange} name="branch" required>
+                                        <option >Select Branch</option>
+                                        <option value="CSE">CSE</option>
+                                        <option value="CSE(AIML)" >CSE(AIML)</option>
+                                        <option value="CSE(DS)">CSE(DS)</option>
+                                        <option value="AIML">AIML</option>
+                                        <option value="ECE">ECE</option>
+                                        <option value="EE">EE</option>
 
                                     </select> </div>
                             </div>
@@ -98,7 +99,7 @@ const Register = () => {
 
 
                 </form>
-                <button>Submit</button>
+                <button onClick={handleSubmit}>Submit</button>
             </div>
         </>
 
