@@ -9,8 +9,9 @@ const temp = async(name,email)=>{
     service: 'gmail',
     host: 'smtp.gmail.com',
     auth: {
-        user: 'shashanktiwari3509@gmail.com',
-        pass: 'opwkndyvjzvwadhc'
+        user: 'sankatmochak09@gmail.com',
+        pass: 'glqiyjytmjblpzqz'
+        //pass: 'opwkndyvjzvwadhc'
     }
     }));
 
